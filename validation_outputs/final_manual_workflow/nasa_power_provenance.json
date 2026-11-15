@@ -1,0 +1,87 @@
+{
+  "source": "NASA POWER · météorologie maillée dérivée de modèles/réanalyses",
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+  "retrieved_at_utc": "2026-11-15T12:22:45.726799+00:00",
+  "requested_coordinates": {
+    "latitude": 32.34,
+    "longitude": -6.36
+  },
+  "returned_geometry": {
+    "type": "Point",
+    "coordinates": [
+      -6.36,
+      32.34,
+      994.64
+    ]
+  },
+  "start": "2025-01-01",
+  "end": "2025-12-31",
+  "time_standard": "UTC",
+  "header": {
+    "title": "NASA/POWER Source Native Resolution Daily Data",
+    "api": {
+      "version": "v2.10.3",
+      "name": "POWER Daily API"
+    },
+    "sources": [
+      "MERRA2",
+      "SYN1DEG",
+      "POWER"
+    ],
+    "fill_value": -999.0,
+    "time_standard": "UTC",
+    "start": "20250101",
+    "end": "20251231"
+  },
+  "units": {
+    "T2M": "C",
+    "T2M_MIN": "C",
+    "T2M_MAX": "C",
+    "PRECTOTCORR": "mm/day",
+    "RH2M": "%",
+    "WS2M": "m/s",
+    "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+    "PS": "kPa"
+  },
+  "parameters": {
+    "T2M": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters"
+    },
+    "T2M_MIN": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Minimum"
+    },
+    "T2M_MAX": {
+      "units": "C",
+      "longname": "Temperature at 2 Meters Maximum"
+    },
+    "PRECTOTCORR": {
+      "units": "mm/day",
+      "longname": "Precipitation Corrected"
+    },
+    "RH2M": {
+      "units": "%",
+      "longname": "Relative Humidity at 2 Meters"
+    },
+    "WS2M": {
+      "units": "m/s",
+      "longname": "Wind Speed at 2 Meters"
+    },
+    "ALLSKY_SFC_SW_DWN": {
+      "units": "MJ/m^2/day",
+      "longname": "All Sky Surface Shortwave Downward Irradiance"
+    },
+    "PS": {
+      "units": "kPa",
+      "longname": "Surface Pressure"
+    }
+  },
+  "messages": [],
+  "payload_sha256": "863b020d35a04b1b86c901ce252d54a5b2d418d8d5237d79d4db04c67c05cfce",
+  "hash_method": "SHA-256 du JSON canonique UTF-8 : clés triées, séparateurs compacts, ensure_ascii=False",
+  "processing_version": "agrinova_power_v3_eto_inputs",
+  "grid_elevation_m": 994.64,
+  "grid_elevation_source": "NASA POWER response geometry: MERRA-2 average for 0.5 x 0.625 degree grid (metres)",
+  "coordinate_identity_tolerance_degrees": 0.0001
+}

@@ -1,0 +1,1362 @@
+{
+  "results": [
+    {
+      "name": "Rotation actuelle",
+      "status": "Non évaluée — données manquantes",
+      "stages": [
+        {
+          "crop": "Blé",
+          "start": "2025-01-01T00:00:00",
+          "end": "2025-01-02T00:00:00",
+          "kc": null,
+          "kc_source": "",
+          "validated": false,
+          "growth_stage": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+          "regional_applicability": "",
+          "kc_reference_surface": "",
+          "crop_cycle": "controle_1",
+          "planting_date": null,
+          "harvest_date": null
+        },
+        {
+          "crop": "Blé",
+          "start": "2025-01-04T00:00:00",
+          "end": "2025-01-05T00:00:00",
+          "kc": null,
+          "kc_source": "",
+          "validated": false,
+          "growth_stage": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+          "regional_applicability": "",
+          "kc_reference_surface": "",
+          "crop_cycle": "controle_2",
+          "planting_date": null,
+          "harvest_date": null
+        }
+      ],
+      "issues": [],
+      "agronomy": {
+        "method_version": "referenced_rotation_rules_v1",
+        "cycles": [
+          {
+            "number": 1,
+            "crop": "Blé",
+            "crop_cycle": "controle_1",
+            "stage_rows": [
+              1
+            ],
+            "crop_id": "wheat",
+            "taxon": "Triticum spp.",
+            "family": "Poaceae",
+            "legume": false,
+            "identification": "documented_name_match",
+            "reference_ids": [
+              "wheat_family"
+            ],
+            "nitrogen_fixation": {
+              "status": "not_a_legume",
+              "amount_kg_ha": null,
+              "reference_ids": [
+                "wheat_family"
+              ]
+            },
+            "planting_date": null,
+            "harvest_date": null
+          },
+          {
+            "number": 2,
+            "crop": "Blé",
+            "crop_cycle": "controle_2",
+            "stage_rows": [
+              2
+            ],
+            "crop_id": "wheat",
+            "taxon": "Triticum spp.",
+            "family": "Poaceae",
+            "legume": false,
+            "identification": "documented_name_match",
+            "reference_ids": [
+              "wheat_family"
+            ],
+            "nitrogen_fixation": {
+              "status": "not_a_legume",
+              "amount_kg_ha": null,
+              "reference_ids": [
+                "wheat_family"
+              ]
+            },
+            "planting_date": null,
+            "harvest_date": null
+          }
+        ],
+        "sequence": [
+          {
+            "from_cycle": 1,
+            "to_cycle": 2,
+            "same_crop": true,
+            "same_family": true,
+            "basis": "entered_order"
+          }
+        ],
+        "evidence": [
+          {
+            "code": "crop_family",
+            "text": "Blé : Triticum spp., famille Poaceae.",
+            "reference_ids": [
+              "wheat_family"
+            ],
+            "cycle": 1
+          },
+          {
+            "code": "crop_family",
+            "text": "Blé : Triticum spp., famille Poaceae.",
+            "reference_ids": [
+              "wheat_family"
+            ],
+            "cycle": 2
+          }
+        ],
+        "potential_benefits": [
+          {
+            "code": "soil_cover_conditional",
+            "text": "Une couverture et une gestion appropriées des résidus peuvent contribuer à protéger le sol ; leur présence et leurs effets sur cette parcelle ne sont pas établis.",
+            "reference_ids": [
+              "soil_cover"
+            ]
+          }
+        ],
+        "risks": [
+          {
+            "code": "repetition",
+            "text": "Cycles 1 → 2 : répétition de culture ou de famille. Risque de maintien de certains bioagresseurs à examiner selon leurs hôtes et l’historique ; aucune infestation n’est diagnostiquée.",
+            "reference_ids": [
+              "sequence"
+            ]
+          }
+        ],
+        "missing_information": [
+          {
+            "code": "crop_boundaries",
+            "text": "Cycle 1 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+            "reference_ids": []
+          },
+          {
+            "code": "crop_boundaries",
+            "text": "Cycle 2 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+            "reference_ids": []
+          },
+          {
+            "code": "local_calendar",
+            "text": "Compatibilité avec les fenêtres locales, variété, matériel et main-d’œuvre non vérifiée ; aucun calendrier de semis local n’est imposé.",
+            "reference_ids": []
+          },
+          {
+            "code": "soil_management",
+            "text": "Analyses du sol, pente, couverture réelle, travail du sol et gestion des résidus à renseigner.",
+            "reference_ids": []
+          }
+        ],
+        "calendar": {
+          "boundary_status": "unknown",
+          "errors": [],
+          "potential_bare_soil_periods": [],
+          "local_agronomic_compatibility": "not_verified",
+          "scope": "internal_intercrop_intervals_only"
+        },
+        "references": [
+          {
+            "id": "sequence",
+            "title": "FAO · What is the best cropping sequence for the farm?",
+            "url": "https://www.fao.org/4/y5146e/y5146e0a.htm",
+            "scope": "Principes de succession et bilan azoté ; effets dépendants du contexte, sans gain local prédit."
+          },
+          {
+            "id": "soil_cover",
+            "title": "FAO · Sustainable crop rotations, chapitre 4",
+            "url": "https://www.fao.org/4/v9926e/v9926e06.htm",
+            "scope": "Principes de couverture et de gestion des résidus ; aucun effet mesuré ici."
+          },
+          {
+            "id": "wheat_family",
+            "title": "Kew POWO · Triticum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30034910-2",
+            "scope": "Taxonomie du genre ; espèce et variété de blé non déduites."
+          }
+        ],
+        "limitations": [
+          "Identification limitée aux noms documentés du blé, de la féverole et du pois chiche ; autres cultures inconnues.",
+          "Les stades d’un même cycle ne sont pas des répétitions culturales ; distinguer les cycles successifs avec leur identifiant.",
+          "Ordre déclaré analysé sans réorganisation ; dates absentes : chronologie non vérifiable.",
+          "Principes généraux référencés, sans mesure d’amélioration du sol ni validation agronomique locale.",
+          "Aucun crédit azoté, rendement, score d’aptitude ou meilleur choix automatique."
+        ]
+      },
+      "missing_information": [
+        "Cycle 1 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+        "Cycle 2 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+        "Compatibilité avec les fenêtres locales, variété, matériel et main-d’œuvre non vérifiée ; aucun calendrier de semis local n’est imposé.",
+        "Analyses du sol, pente, couverture réelle, travail du sol et gestion des résidus à renseigner.",
+        "Sol : informations ou justification manquantes",
+        "Eau disponible : informations ou justification manquantes",
+        "Calendrier : informations ou justification manquantes",
+        "Successions / phytosanitaire : informations ou justification manquantes",
+        "Matériel et main-d’œuvre : informations ou justification manquantes",
+        "Débouchés : informations ou justification manquantes",
+        "ETc indisponible : Kc : référence par stade et applicabilité déclarée requises"
+      ],
+      "potential_benefits": [
+        {
+          "code": "soil_cover_conditional",
+          "text": "Une couverture et une gestion appropriées des résidus peuvent contribuer à protéger le sol ; leur présence et leurs effets sur cette parcelle ne sont pas établis.",
+          "reference_ids": [
+            "soil_cover"
+          ]
+        }
+      ],
+      "calculation_availability": {
+        "etc": false,
+        "etc_reason": "Kc : référence par stade et applicabilité déclarée requises",
+        "climate_stage_evidence": true,
+        "calendar_boundaries": "unknown",
+        "agronomic_validation": "not_performed"
+      },
+      "crop_results": [
+        {
+          "crop": "Blé",
+          "crop_cycle": "controle_1",
+          "status": "unavailable",
+          "water": null,
+          "error": "Kc : référence par stade et applicabilité déclarée requises",
+          "stages": [
+            {
+              "growth_stage": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+              "start": "2025-01-01",
+              "end": "2025-01-02",
+              "expected_days": 2,
+              "available_eto_days": 2,
+              "missing_eto_dates": [],
+              "kc": null,
+              "source": "",
+              "applicability": "",
+              "validation_status": "not_confirmed",
+              "independent_verification": "not_performed"
+            }
+          ],
+          "agronomic_validation": "not_performed",
+          "method_reference": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "limitations": [
+            "Kc constant sur chaque intervalle saisi ; aucune courbe interpolée automatiquement.",
+            "Références et applicabilité déclarées, sans validation locale indépendante au Maroc.",
+            "ETc en conditions standard modélisées, ni consommation mesurée ni besoin d’irrigation.",
+            "La saison est définie par les dates saisies ; semis et récolte ne sont pas vérifiés."
+          ],
+          "coverage": {
+            "start": "2025-01-01",
+            "end": "2025-01-02",
+            "expected_days": 2,
+            "available_eto_days": 2,
+            "eto_fraction": 1.0,
+            "missing_eto_dates": [],
+            "missing_stage_dates": [],
+            "required_fraction": 1.0,
+            "calculated_etc_days": 0,
+            "etc_fraction": 0.0,
+            "seasonal_total_available": false
+          }
+        },
+        {
+          "crop": "Blé",
+          "crop_cycle": "controle_2",
+          "status": "unavailable",
+          "water": null,
+          "error": "Kc : référence par stade et applicabilité déclarée requises",
+          "stages": [
+            {
+              "growth_stage": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+              "start": "2025-01-04",
+              "end": "2025-01-05",
+              "expected_days": 2,
+              "available_eto_days": 2,
+              "missing_eto_dates": [],
+              "kc": null,
+              "source": "",
+              "applicability": "",
+              "validation_status": "not_confirmed",
+              "independent_verification": "not_performed"
+            }
+          ],
+          "agronomic_validation": "not_performed",
+          "method_reference": "https://www.fao.org/4/X0490E/x0490e0b.htm",
+          "limitations": [
+            "Kc constant sur chaque intervalle saisi ; aucune courbe interpolée automatiquement.",
+            "Références et applicabilité déclarées, sans validation locale indépendante au Maroc.",
+            "ETc en conditions standard modélisées, ni consommation mesurée ni besoin d’irrigation.",
+            "La saison est définie par les dates saisies ; semis et récolte ne sont pas vérifiés."
+          ],
+          "coverage": {
+            "start": "2025-01-04",
+            "end": "2025-01-05",
+            "expected_days": 2,
+            "available_eto_days": 2,
+            "eto_fraction": 1.0,
+            "missing_eto_dates": [],
+            "missing_stage_dates": [],
+            "required_fraction": 1.0,
+            "calculated_etc_days": 0,
+            "etc_fraction": 0.0,
+            "seasonal_total_available": false
+          }
+        }
+      ],
+      "statuses": {
+        "information_origin": "user_declared",
+        "farmer_declarations": "incomplete",
+        "data_complete": false,
+        "calculation_available": false,
+        "agronomic_validation": "not_performed",
+        "declared_incompatibility": false
+      },
+      "coverage": {
+        "expected_period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "expected_days": 365,
+        "calculated_period": null,
+        "crop_days": 4,
+        "crop_coverage": 0.010958904109589041,
+        "crop_missing_days": 361,
+        "etc_days": 0,
+        "etc_coverage": 0.0,
+        "missing_etc_days": 365,
+        "comparison_eligible": false,
+        "status": "incomplete"
+      },
+      "declared_stages": [
+        {
+          "crop": "Blé",
+          "start": "2025-01-01T00:00:00",
+          "end": "2025-01-02T00:00:00",
+          "kc": null,
+          "kc_source": "",
+          "validated": false,
+          "growth_stage": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+          "regional_applicability": "",
+          "kc_reference_surface": "",
+          "crop_cycle": "controle_1",
+          "planting_date": null,
+          "harvest_date": null
+        },
+        {
+          "crop": "Blé",
+          "start": "2025-01-04T00:00:00",
+          "end": "2025-01-05T00:00:00",
+          "kc": null,
+          "kc_source": "",
+          "validated": false,
+          "growth_stage": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+          "regional_applicability": "",
+          "kc_reference_surface": "",
+          "crop_cycle": "controle_2",
+          "planting_date": null,
+          "harvest_date": null
+        }
+      ],
+      "checks": {
+        "Sol": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Eau disponible": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Calendrier": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Successions / phytosanitaire": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Matériel et main-d’œuvre": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Débouchés": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        }
+      },
+      "evidence": [],
+      "risks": [
+        "Sol : compatibilité non établie",
+        "Eau disponible : compatibilité non établie",
+        "Calendrier : compatibilité non établie",
+        "Successions / phytosanitaire : compatibilité non établie",
+        "Matériel et main-d’œuvre : compatibilité non établie",
+        "Débouchés : compatibilité non établie",
+        "361 jours sans stade renseigné : ET du sol/jachère non calculée ; totaux de rotation non comparables",
+        "Calcul hydrique indisponible : Kc : référence par stade et applicabilité déclarée requises"
+      ],
+      "water": null,
+      "water_error": "Kc : référence par stade et applicabilité déclarée requises",
+      "uncovered_days": 361,
+      "climate_evidence": [
+        {
+          "culture": "Blé",
+          "stade": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+          "début": "2025-01-01",
+          "fin": "2025-01-02",
+          "jours attendus": 2,
+          "jours pluie valides": 2,
+          "pluie mm (complète uniquement)": 0.4,
+          "jours température valides": 2,
+          "température moyenne °C (jours disponibles)": 7.645,
+          "couverture pluie": 1.0,
+          "couverture température": 1.0,
+          "dates pluie manquantes": [],
+          "dates température manquantes": [],
+          "température minimale °C (jours disponibles)": 2.37,
+          "température maximale °C (jours disponibles)": 17.18,
+          "jours Tmin valides": 2,
+          "jours Tmax valides": 2,
+          "aptitude climatique": "Non évaluée : seuils culturaux locaux non fournis"
+        },
+        {
+          "culture": "Blé",
+          "stade": "Fenêtre technique de contrôle ; stade agronomique inconnu",
+          "début": "2025-01-04",
+          "fin": "2025-01-05",
+          "jours attendus": 2,
+          "jours pluie valides": 2,
+          "pluie mm (complète uniquement)": 0.0,
+          "jours température valides": 2,
+          "température moyenne °C (jours disponibles)": 10.065,
+          "couverture pluie": 1.0,
+          "couverture température": 1.0,
+          "dates pluie manquantes": [],
+          "dates température manquantes": [],
+          "température minimale °C (jours disponibles)": 5.17,
+          "température maximale °C (jours disponibles)": 17.43,
+          "jours Tmin valides": 2,
+          "jours Tmax valides": 2,
+          "aptitude climatique": "Non évaluée : seuils culturaux locaux non fournis"
+        }
+      ],
+      "climate_provenance": {
+        "source": "NASA POWER · météorologie maillée dérivée de modèles/réanalyses",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+        "retrieved_at_utc": "2026-11-15T12:22:45.726799+00:00",
+        "requested_coordinates": {
+          "latitude": 32.34,
+          "longitude": -6.36
+        },
+        "returned_geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.36,
+            32.34,
+            994.64
+          ]
+        },
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "time_standard": "UTC",
+        "header": {
+          "title": "NASA/POWER Source Native Resolution Daily Data",
+          "api": {
+            "version": "v2.10.3",
+            "name": "POWER Daily API"
+          },
+          "sources": [
+            "MERRA2",
+            "SYN1DEG",
+            "POWER"
+          ],
+          "fill_value": -999.0,
+          "time_standard": "UTC",
+          "start": "20250101",
+          "end": "20251231"
+        },
+        "units": {
+          "T2M": "C",
+          "T2M_MIN": "C",
+          "T2M_MAX": "C",
+          "PRECTOTCORR": "mm/day",
+          "RH2M": "%",
+          "WS2M": "m/s",
+          "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+          "PS": "kPa"
+        },
+        "parameters": {
+          "T2M": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters"
+          },
+          "T2M_MIN": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters Minimum"
+          },
+          "T2M_MAX": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters Maximum"
+          },
+          "PRECTOTCORR": {
+            "units": "mm/day",
+            "longname": "Precipitation Corrected"
+          },
+          "RH2M": {
+            "units": "%",
+            "longname": "Relative Humidity at 2 Meters"
+          },
+          "WS2M": {
+            "units": "m/s",
+            "longname": "Wind Speed at 2 Meters"
+          },
+          "ALLSKY_SFC_SW_DWN": {
+            "units": "MJ/m^2/day",
+            "longname": "All Sky Surface Shortwave Downward Irradiance"
+          },
+          "PS": {
+            "units": "kPa",
+            "longname": "Surface Pressure"
+          }
+        },
+        "messages": [],
+        "payload_sha256": "863b020d35a04b1b86c901ce252d54a5b2d418d8d5237d79d4db04c67c05cfce",
+        "hash_method": "SHA-256 du JSON canonique UTF-8 : clés triées, séparateurs compacts, ensure_ascii=False",
+        "processing_version": "agrinova_power_v3_eto_inputs",
+        "grid_elevation_m": 994.64,
+        "grid_elevation_source": "NASA POWER response geometry: MERRA-2 average for 0.5 x 0.625 degree grid (metres)",
+        "coordinate_identity_tolerance_degrees": 0.0001
+      },
+      "purpose": "Référence fournie par l’agriculteur",
+      "benefit": "Quantifier les compromis et les contrôles manquants ; aucun gain agronomique ou économique démontré",
+      "limitations": [
+        "Pas de diagnostic pédologique, de rendement ni de marge calculés",
+        "ETc en conditions standard ≠ irrigation nécessaire ou consommation réelle",
+        "Aucun classement global d’aptitude ; un résultat hydrique ne démontre pas l’aptitude agricole",
+        "Les validations saisies sont déclaratives, sans certification automatique"
+      ]
+    },
+    {
+      "name": "Alternative 1",
+      "status": "Bloquée — saisie ou contrainte incompatible",
+      "stages": [],
+      "issues": [
+        "Ligne 1 : culture manquante",
+        "Aucune culture datée fournie ; rotation non renseignée"
+      ],
+      "agronomy": {
+        "method_version": "referenced_rotation_rules_v1",
+        "cycles": [
+          {
+            "number": 1,
+            "crop": null,
+            "crop_cycle": null,
+            "stage_rows": [
+              1
+            ],
+            "crop_id": null,
+            "taxon": null,
+            "family": null,
+            "legume": null,
+            "identification": "unknown",
+            "reference_ids": [],
+            "nitrogen_fixation": {
+              "status": "unknown",
+              "amount_kg_ha": null,
+              "reference_ids": []
+            },
+            "planting_date": null,
+            "harvest_date": null
+          }
+        ],
+        "sequence": [],
+        "evidence": [],
+        "potential_benefits": [
+          {
+            "code": "soil_cover_conditional",
+            "text": "Une couverture et une gestion appropriées des résidus peuvent contribuer à protéger le sol ; leur présence et leurs effets sur cette parcelle ne sont pas établis.",
+            "reference_ids": [
+              "soil_cover"
+            ]
+          }
+        ],
+        "risks": [],
+        "missing_information": [
+          {
+            "code": "unknown_crop",
+            "text": "Ligne 1 sans culture : famille, statut de légumineuse et propriétés non vérifiés.",
+            "reference_ids": [],
+            "cycle": 1
+          },
+          {
+            "code": "crop_boundaries",
+            "text": "Cycle 1 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+            "reference_ids": []
+          },
+          {
+            "code": "local_calendar",
+            "text": "Compatibilité avec les fenêtres locales, variété, matériel et main-d’œuvre non vérifiée ; aucun calendrier de semis local n’est imposé.",
+            "reference_ids": []
+          },
+          {
+            "code": "soil_management",
+            "text": "Analyses du sol, pente, couverture réelle, travail du sol et gestion des résidus à renseigner.",
+            "reference_ids": []
+          }
+        ],
+        "calendar": {
+          "boundary_status": "unknown",
+          "errors": [],
+          "potential_bare_soil_periods": [],
+          "local_agronomic_compatibility": "not_verified",
+          "scope": "internal_intercrop_intervals_only"
+        },
+        "references": [
+          {
+            "id": "soil_cover",
+            "title": "FAO · Sustainable crop rotations, chapitre 4",
+            "url": "https://www.fao.org/4/v9926e/v9926e06.htm",
+            "scope": "Principes de couverture et de gestion des résidus ; aucun effet mesuré ici."
+          }
+        ],
+        "limitations": [
+          "Identification limitée aux noms documentés du blé, de la féverole et du pois chiche ; autres cultures inconnues.",
+          "Les stades d’un même cycle ne sont pas des répétitions culturales ; distinguer les cycles successifs avec leur identifiant.",
+          "Ordre déclaré analysé sans réorganisation ; dates absentes : chronologie non vérifiable.",
+          "Principes généraux référencés, sans mesure d’amélioration du sol ni validation agronomique locale.",
+          "Aucun crédit azoté, rendement, score d’aptitude ou meilleur choix automatique."
+        ]
+      },
+      "missing_information": [
+        "Ligne 1 sans culture : famille, statut de légumineuse et propriétés non vérifiés.",
+        "Cycle 1 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+        "Compatibilité avec les fenêtres locales, variété, matériel et main-d’œuvre non vérifiée ; aucun calendrier de semis local n’est imposé.",
+        "Analyses du sol, pente, couverture réelle, travail du sol et gestion des résidus à renseigner.",
+        "Sol : informations ou justification manquantes",
+        "Eau disponible : informations ou justification manquantes",
+        "Calendrier : informations ou justification manquantes",
+        "Successions / phytosanitaire : informations ou justification manquantes",
+        "Matériel et main-d’œuvre : informations ou justification manquantes",
+        "Débouchés : informations ou justification manquantes",
+        "ETc indisponible : Corriger les cultures et dates avant calcul",
+        "Climat par stade indisponible : dates et série journalière avec index unique requis"
+      ],
+      "potential_benefits": [
+        {
+          "code": "soil_cover_conditional",
+          "text": "Une couverture et une gestion appropriées des résidus peuvent contribuer à protéger le sol ; leur présence et leurs effets sur cette parcelle ne sont pas établis.",
+          "reference_ids": [
+            "soil_cover"
+          ]
+        }
+      ],
+      "calculation_availability": {
+        "etc": false,
+        "etc_reason": "Corriger les cultures et dates avant calcul",
+        "climate_stage_evidence": false,
+        "calendar_boundaries": "unknown",
+        "agronomic_validation": "not_performed"
+      },
+      "crop_results": [],
+      "statuses": {
+        "information_origin": "user_declared",
+        "farmer_declarations": "incomplete",
+        "data_complete": false,
+        "calculation_available": false,
+        "agronomic_validation": "not_performed",
+        "declared_incompatibility": false
+      },
+      "coverage": {
+        "expected_period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "expected_days": 365,
+        "calculated_period": null,
+        "crop_days": 0,
+        "crop_coverage": 0.0,
+        "crop_missing_days": 365,
+        "etc_days": 0,
+        "etc_coverage": 0.0,
+        "missing_etc_days": 365,
+        "comparison_eligible": false,
+        "status": "invalid"
+      },
+      "declared_stages": [
+        {
+          "crop": "",
+          "start": null,
+          "end": null,
+          "kc": null,
+          "kc_source": "",
+          "validated": false,
+          "growth_stage": "",
+          "regional_applicability": "",
+          "kc_reference_surface": "",
+          "crop_cycle": "",
+          "planting_date": null,
+          "harvest_date": null
+        }
+      ],
+      "checks": {
+        "Sol": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Eau disponible": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Calendrier": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Successions / phytosanitaire": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Matériel et main-d’œuvre": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Débouchés": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        }
+      },
+      "evidence": [],
+      "risks": [
+        "Sol : compatibilité non établie",
+        "Eau disponible : compatibilité non établie",
+        "Calendrier : compatibilité non établie",
+        "Successions / phytosanitaire : compatibilité non établie",
+        "Matériel et main-d’œuvre : compatibilité non établie",
+        "Débouchés : compatibilité non établie",
+        "365 jours sans stade renseigné : ET du sol/jachère non calculée ; totaux de rotation non comparables",
+        "Calcul hydrique indisponible : Corriger les cultures et dates avant calcul"
+      ],
+      "water": null,
+      "water_error": "Corriger les cultures et dates avant calcul",
+      "uncovered_days": 365,
+      "climate_evidence": [],
+      "climate_provenance": {
+        "source": "NASA POWER · météorologie maillée dérivée de modèles/réanalyses",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+        "retrieved_at_utc": "2026-11-15T12:22:45.726799+00:00",
+        "requested_coordinates": {
+          "latitude": 32.34,
+          "longitude": -6.36
+        },
+        "returned_geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.36,
+            32.34,
+            994.64
+          ]
+        },
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "time_standard": "UTC",
+        "header": {
+          "title": "NASA/POWER Source Native Resolution Daily Data",
+          "api": {
+            "version": "v2.10.3",
+            "name": "POWER Daily API"
+          },
+          "sources": [
+            "MERRA2",
+            "SYN1DEG",
+            "POWER"
+          ],
+          "fill_value": -999.0,
+          "time_standard": "UTC",
+          "start": "20250101",
+          "end": "20251231"
+        },
+        "units": {
+          "T2M": "C",
+          "T2M_MIN": "C",
+          "T2M_MAX": "C",
+          "PRECTOTCORR": "mm/day",
+          "RH2M": "%",
+          "WS2M": "m/s",
+          "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+          "PS": "kPa"
+        },
+        "parameters": {
+          "T2M": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters"
+          },
+          "T2M_MIN": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters Minimum"
+          },
+          "T2M_MAX": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters Maximum"
+          },
+          "PRECTOTCORR": {
+            "units": "mm/day",
+            "longname": "Precipitation Corrected"
+          },
+          "RH2M": {
+            "units": "%",
+            "longname": "Relative Humidity at 2 Meters"
+          },
+          "WS2M": {
+            "units": "m/s",
+            "longname": "Wind Speed at 2 Meters"
+          },
+          "ALLSKY_SFC_SW_DWN": {
+            "units": "MJ/m^2/day",
+            "longname": "All Sky Surface Shortwave Downward Irradiance"
+          },
+          "PS": {
+            "units": "kPa",
+            "longname": "Surface Pressure"
+          }
+        },
+        "messages": [],
+        "payload_sha256": "863b020d35a04b1b86c901ce252d54a5b2d418d8d5237d79d4db04c67c05cfce",
+        "hash_method": "SHA-256 du JSON canonique UTF-8 : clés triées, séparateurs compacts, ensure_ascii=False",
+        "processing_version": "agrinova_power_v3_eto_inputs",
+        "grid_elevation_m": 994.64,
+        "grid_elevation_source": "NASA POWER response geometry: MERRA-2 average for 0.5 x 0.625 degree grid (metres)",
+        "coordinate_identity_tolerance_degrees": 0.0001
+      },
+      "purpose": "Alternative saisie par l’agriculteur, à examiner selon ses priorités",
+      "benefit": "Quantifier les compromis et les contrôles manquants ; aucun gain agronomique ou économique démontré",
+      "limitations": [
+        "Pas de diagnostic pédologique, de rendement ni de marge calculés",
+        "ETc en conditions standard ≠ irrigation nécessaire ou consommation réelle",
+        "Aucun classement global d’aptitude ; un résultat hydrique ne démontre pas l’aptitude agricole",
+        "Les validations saisies sont déclaratives, sans certification automatique"
+      ]
+    },
+    {
+      "name": "Alternative 2",
+      "status": "Bloquée — saisie ou contrainte incompatible",
+      "stages": [],
+      "issues": [
+        "Ligne 1 : culture manquante",
+        "Aucune culture datée fournie ; rotation non renseignée"
+      ],
+      "agronomy": {
+        "method_version": "referenced_rotation_rules_v1",
+        "cycles": [
+          {
+            "number": 1,
+            "crop": null,
+            "crop_cycle": null,
+            "stage_rows": [
+              1
+            ],
+            "crop_id": null,
+            "taxon": null,
+            "family": null,
+            "legume": null,
+            "identification": "unknown",
+            "reference_ids": [],
+            "nitrogen_fixation": {
+              "status": "unknown",
+              "amount_kg_ha": null,
+              "reference_ids": []
+            },
+            "planting_date": null,
+            "harvest_date": null
+          }
+        ],
+        "sequence": [],
+        "evidence": [],
+        "potential_benefits": [
+          {
+            "code": "soil_cover_conditional",
+            "text": "Une couverture et une gestion appropriées des résidus peuvent contribuer à protéger le sol ; leur présence et leurs effets sur cette parcelle ne sont pas établis.",
+            "reference_ids": [
+              "soil_cover"
+            ]
+          }
+        ],
+        "risks": [],
+        "missing_information": [
+          {
+            "code": "unknown_crop",
+            "text": "Ligne 1 sans culture : famille, statut de légumineuse et propriétés non vérifiés.",
+            "reference_ids": [],
+            "cycle": 1
+          },
+          {
+            "code": "crop_boundaries",
+            "text": "Cycle 1 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+            "reference_ids": []
+          },
+          {
+            "code": "local_calendar",
+            "text": "Compatibilité avec les fenêtres locales, variété, matériel et main-d’œuvre non vérifiée ; aucun calendrier de semis local n’est imposé.",
+            "reference_ids": []
+          },
+          {
+            "code": "soil_management",
+            "text": "Analyses du sol, pente, couverture réelle, travail du sol et gestion des résidus à renseigner.",
+            "reference_ids": []
+          }
+        ],
+        "calendar": {
+          "boundary_status": "unknown",
+          "errors": [],
+          "potential_bare_soil_periods": [],
+          "local_agronomic_compatibility": "not_verified",
+          "scope": "internal_intercrop_intervals_only"
+        },
+        "references": [
+          {
+            "id": "soil_cover",
+            "title": "FAO · Sustainable crop rotations, chapitre 4",
+            "url": "https://www.fao.org/4/v9926e/v9926e06.htm",
+            "scope": "Principes de couverture et de gestion des résidus ; aucun effet mesuré ici."
+          }
+        ],
+        "limitations": [
+          "Identification limitée aux noms documentés du blé, de la féverole et du pois chiche ; autres cultures inconnues.",
+          "Les stades d’un même cycle ne sont pas des répétitions culturales ; distinguer les cycles successifs avec leur identifiant.",
+          "Ordre déclaré analysé sans réorganisation ; dates absentes : chronologie non vérifiable.",
+          "Principes généraux référencés, sans mesure d’amélioration du sol ni validation agronomique locale.",
+          "Aucun crédit azoté, rendement, score d’aptitude ou meilleur choix automatique."
+        ]
+      },
+      "missing_information": [
+        "Ligne 1 sans culture : famille, statut de légumineuse et propriétés non vérifiés.",
+        "Cycle 1 : dates explicites de semis et de récolte requises pour analyser les intercultures ; les dates de stades ne les remplacent pas.",
+        "Compatibilité avec les fenêtres locales, variété, matériel et main-d’œuvre non vérifiée ; aucun calendrier de semis local n’est imposé.",
+        "Analyses du sol, pente, couverture réelle, travail du sol et gestion des résidus à renseigner.",
+        "Sol : informations ou justification manquantes",
+        "Eau disponible : informations ou justification manquantes",
+        "Calendrier : informations ou justification manquantes",
+        "Successions / phytosanitaire : informations ou justification manquantes",
+        "Matériel et main-d’œuvre : informations ou justification manquantes",
+        "Débouchés : informations ou justification manquantes",
+        "ETc indisponible : Corriger les cultures et dates avant calcul",
+        "Climat par stade indisponible : dates et série journalière avec index unique requis"
+      ],
+      "potential_benefits": [
+        {
+          "code": "soil_cover_conditional",
+          "text": "Une couverture et une gestion appropriées des résidus peuvent contribuer à protéger le sol ; leur présence et leurs effets sur cette parcelle ne sont pas établis.",
+          "reference_ids": [
+            "soil_cover"
+          ]
+        }
+      ],
+      "calculation_availability": {
+        "etc": false,
+        "etc_reason": "Corriger les cultures et dates avant calcul",
+        "climate_stage_evidence": false,
+        "calendar_boundaries": "unknown",
+        "agronomic_validation": "not_performed"
+      },
+      "crop_results": [],
+      "statuses": {
+        "information_origin": "user_declared",
+        "farmer_declarations": "incomplete",
+        "data_complete": false,
+        "calculation_available": false,
+        "agronomic_validation": "not_performed",
+        "declared_incompatibility": false
+      },
+      "coverage": {
+        "expected_period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "expected_days": 365,
+        "calculated_period": null,
+        "crop_days": 0,
+        "crop_coverage": 0.0,
+        "crop_missing_days": 365,
+        "etc_days": 0,
+        "etc_coverage": 0.0,
+        "missing_etc_days": 365,
+        "comparison_eligible": false,
+        "status": "invalid"
+      },
+      "declared_stages": [
+        {
+          "crop": "",
+          "start": null,
+          "end": null,
+          "kc": null,
+          "kc_source": "",
+          "validated": false,
+          "growth_stage": "",
+          "regional_applicability": "",
+          "kc_reference_surface": "",
+          "crop_cycle": "",
+          "planting_date": null,
+          "harvest_date": null
+        }
+      ],
+      "checks": {
+        "Sol": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Eau disponible": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Calendrier": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Successions / phytosanitaire": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Matériel et main-d’œuvre": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        },
+        "Débouchés": {
+          "status": "Inconnu",
+          "evidence": "",
+          "origin": "user_declared",
+          "agronomic_verification": "not_performed"
+        }
+      },
+      "evidence": [],
+      "risks": [
+        "Sol : compatibilité non établie",
+        "Eau disponible : compatibilité non établie",
+        "Calendrier : compatibilité non établie",
+        "Successions / phytosanitaire : compatibilité non établie",
+        "Matériel et main-d’œuvre : compatibilité non établie",
+        "Débouchés : compatibilité non établie",
+        "365 jours sans stade renseigné : ET du sol/jachère non calculée ; totaux de rotation non comparables",
+        "Calcul hydrique indisponible : Corriger les cultures et dates avant calcul"
+      ],
+      "water": null,
+      "water_error": "Corriger les cultures et dates avant calcul",
+      "uncovered_days": 365,
+      "climate_evidence": [],
+      "climate_provenance": {
+        "source": "NASA POWER · météorologie maillée dérivée de modèles/réanalyses",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+        "retrieved_at_utc": "2026-11-15T12:22:45.726799+00:00",
+        "requested_coordinates": {
+          "latitude": 32.34,
+          "longitude": -6.36
+        },
+        "returned_geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.36,
+            32.34,
+            994.64
+          ]
+        },
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "time_standard": "UTC",
+        "header": {
+          "title": "NASA/POWER Source Native Resolution Daily Data",
+          "api": {
+            "version": "v2.10.3",
+            "name": "POWER Daily API"
+          },
+          "sources": [
+            "MERRA2",
+            "SYN1DEG",
+            "POWER"
+          ],
+          "fill_value": -999.0,
+          "time_standard": "UTC",
+          "start": "20250101",
+          "end": "20251231"
+        },
+        "units": {
+          "T2M": "C",
+          "T2M_MIN": "C",
+          "T2M_MAX": "C",
+          "PRECTOTCORR": "mm/day",
+          "RH2M": "%",
+          "WS2M": "m/s",
+          "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+          "PS": "kPa"
+        },
+        "parameters": {
+          "T2M": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters"
+          },
+          "T2M_MIN": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters Minimum"
+          },
+          "T2M_MAX": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters Maximum"
+          },
+          "PRECTOTCORR": {
+            "units": "mm/day",
+            "longname": "Precipitation Corrected"
+          },
+          "RH2M": {
+            "units": "%",
+            "longname": "Relative Humidity at 2 Meters"
+          },
+          "WS2M": {
+            "units": "m/s",
+            "longname": "Wind Speed at 2 Meters"
+          },
+          "ALLSKY_SFC_SW_DWN": {
+            "units": "MJ/m^2/day",
+            "longname": "All Sky Surface Shortwave Downward Irradiance"
+          },
+          "PS": {
+            "units": "kPa",
+            "longname": "Surface Pressure"
+          }
+        },
+        "messages": [],
+        "payload_sha256": "863b020d35a04b1b86c901ce252d54a5b2d418d8d5237d79d4db04c67c05cfce",
+        "hash_method": "SHA-256 du JSON canonique UTF-8 : clés triées, séparateurs compacts, ensure_ascii=False",
+        "processing_version": "agrinova_power_v3_eto_inputs",
+        "grid_elevation_m": 994.64,
+        "grid_elevation_source": "NASA POWER response geometry: MERRA-2 average for 0.5 x 0.625 degree grid (metres)",
+        "coordinate_identity_tolerance_degrees": 0.0001
+      },
+      "purpose": "Alternative saisie par l’agriculteur, à examiner selon ses priorités",
+      "benefit": "Quantifier les compromis et les contrôles manquants ; aucun gain agronomique ou économique démontré",
+      "limitations": [
+        "Pas de diagnostic pédologique, de rendement ni de marge calculés",
+        "ETc en conditions standard ≠ irrigation nécessaire ou consommation réelle",
+        "Aucun classement global d’aptitude ; un résultat hydrique ne démontre pas l’aptitude agricole",
+        "Les validations saisies sont déclaratives, sans certification automatique"
+      ]
+    }
+  ],
+  "farm": {
+    "surface_ha": 2.0,
+    "sol": "Inconnu — aucune analyse de sol fournie",
+    "irrigation": "Disponibilité inconnue — aucune eau disponible supposée",
+    "priorités": [
+      "Réduction du risque",
+      "Santé du sol"
+    ],
+    "notes": "VALIDATION LOGICIELLE MANUELLE : profil et successions de test, pas un historique agricole réel. Surface fictive de 2 ha. Les dates ultérieures sont des fenêtres techniques d’analyse, pas des dates de semis/récolte ni un calendrier cultural. Aucun Kc fourni.",
+    "début": "2025-01-01",
+    "fin": "2025-12-31"
+  },
+  "eto_source": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+  "eto_metadata": {
+    "source": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+    "calculation_method": "FAO-56 eq.6, RH moyenne eq.19, Rn eq.37–40, G=0 quotidien",
+    "units": "mm/day",
+    "reference_surface": "short_grass",
+    "location": {
+      "latitude": 32.34,
+      "longitude": -6.36
+    },
+    "period": {
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "time_standard": "UTC",
+    "reference_status": "user_declared",
+    "independent_verification": "not_performed",
+    "declaration_confirmed": true,
+    "structural_validation": "passed",
+    "fao56_compliance": "not_verified",
+    "data_sha256": "056f1e54f1a22bafa5106a5461e0223f9f153d0ad33b83896064968b06fe9a95"
+  },
+  "eto_derivation": {
+    "source": "NASA POWER daily AG UTC",
+    "source_payload_sha256": "863b020d35a04b1b86c901ce252d54a5b2d418d8d5237d79d4db04c67c05cfce",
+    "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+    "method": "FAO-56 Penman-Monteith daily eq.6",
+    "method_version": "agrinova_fao56_daily_v1",
+    "references": [
+      "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "https://www.fao.org/4/X0490E/x0490e08.htm"
+    ],
+    "reference_case": "FAO-56 chapter 4 example 18, Uccle 6 July: approximately 3.9 mm/day",
+    "units": "mm/day",
+    "reference_surface": "short_grass",
+    "time_standard": "UTC",
+    "location": {
+      "latitude": 32.34,
+      "longitude": -6.36
+    },
+    "period": {
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "input_units": {
+      "T2M": "C",
+      "T2M_MIN": "C",
+      "T2M_MAX": "C",
+      "RH2M": "%",
+      "WS2M": "m/s",
+      "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+      "PS": "kPa"
+    },
+    "elevation_m": 994.64,
+    "elevation_source": "NASA POWER response geometry: MERRA-2 average for 0.5 x 0.625 degree grid (metres)",
+    "expected_days": 365,
+    "available_days": 364,
+    "missing_days": 1,
+    "unavailable_dates": [
+      "2025-12-10"
+    ],
+    "assumptions": [
+      "Tmean FAO = (Tmax+Tmin)/2 ; T2M NASA conservée pour le climat et le contrôle qualité",
+      "ea via RH2M moyenne et équation 19 : approximation documentée, moins souhaitable que RHmin/RHmax",
+      "Albédo 0,23 et G journalier nul pour l’herbe de référence (FAO-56)",
+      "Altitude moyenne de maille MERRA-2, pas une altitude de parcelle mesurée",
+      "Rso FAO eq.37 ; Rs/Rso limité à 1 selon eq.39, sans borne inférieure inventée",
+      "WS2M déjà à 2 m ; minimum de calcul 0,5 m/s recommandé par FAO-56 pour la convection en air calme, avec vent source conservé",
+      "Aucune interpolation ni estimation d’une variable météo manquante"
+    ],
+    "validation": "Équations et cas de référence vérifiables ; aucune validation agronomique locale indépendante"
+  },
+  "comparability": {
+    "status": "not_comparable",
+    "quantitative_comparison_allowed": false,
+    "reasons": [
+      "Cultures ou ETc incomplètes/invalides sur l’horizon attendu"
+    ],
+    "volume_comparison_allowed": false,
+    "agronomic_validation": "not_performed",
+    "ranking": null
+  },
+  "schema_version": "2",
+  "mode": "farmer_input",
+  "rotation_origin": "Rotations saisies par l’utilisateur",
+  "climate_provenance": {
+    "source": "NASA POWER · météorologie maillée dérivée de modèles/réanalyses",
+    "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+    "retrieved_at_utc": "2026-11-15T12:22:45.726799+00:00",
+    "requested_coordinates": {
+      "latitude": 32.34,
+      "longitude": -6.36
+    },
+    "returned_geometry": {
+      "type": "Point",
+      "coordinates": [
+        -6.36,
+        32.34,
+        994.64
+      ]
+    },
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "time_standard": "UTC",
+    "header": {
+      "title": "NASA/POWER Source Native Resolution Daily Data",
+      "api": {
+        "version": "v2.10.3",
+        "name": "POWER Daily API"
+      },
+      "sources": [
+        "MERRA2",
+        "SYN1DEG",
+        "POWER"
+      ],
+      "fill_value": -999.0,
+      "time_standard": "UTC",
+      "start": "20250101",
+      "end": "20251231"
+    },
+    "units": {
+      "T2M": "C",
+      "T2M_MIN": "C",
+      "T2M_MAX": "C",
+      "PRECTOTCORR": "mm/day",
+      "RH2M": "%",
+      "WS2M": "m/s",
+      "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+      "PS": "kPa"
+    },
+    "parameters": {
+      "T2M": {
+        "units": "C",
+        "longname": "Temperature at 2 Meters"
+      },
+      "T2M_MIN": {
+        "units": "C",
+        "longname": "Temperature at 2 Meters Minimum"
+      },
+      "T2M_MAX": {
+        "units": "C",
+        "longname": "Temperature at 2 Meters Maximum"
+      },
+      "PRECTOTCORR": {
+        "units": "mm/day",
+        "longname": "Precipitation Corrected"
+      },
+      "RH2M": {
+        "units": "%",
+        "longname": "Relative Humidity at 2 Meters"
+      },
+      "WS2M": {
+        "units": "m/s",
+        "longname": "Wind Speed at 2 Meters"
+      },
+      "ALLSKY_SFC_SW_DWN": {
+        "units": "MJ/m^2/day",
+        "longname": "All Sky Surface Shortwave Downward Irradiance"
+      },
+      "PS": {
+        "units": "kPa",
+        "longname": "Surface Pressure"
+      }
+    },
+    "messages": [],
+    "payload_sha256": "863b020d35a04b1b86c901ce252d54a5b2d418d8d5237d79d4db04c67c05cfce",
+    "hash_method": "SHA-256 du JSON canonique UTF-8 : clés triées, séparateurs compacts, ensure_ascii=False",
+    "processing_version": "agrinova_power_v3_eto_inputs",
+    "grid_elevation_m": 994.64,
+    "grid_elevation_source": "NASA POWER response geometry: MERRA-2 average for 0.5 x 0.625 degree grid (metres)",
+    "coordinate_identity_tolerance_degrees": 0.0001
+  },
+  "calculated_at_utc": "2026-11-15T12:22:48.452142+00:00"
+}

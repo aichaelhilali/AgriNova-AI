@@ -1,0 +1,6 @@
+{
+  "health_http_status": 200,
+  "health_body": "ok",
+  "root_http_status": 200,
+  "verification": "HTTP startup only; no browser visual verification"
+}

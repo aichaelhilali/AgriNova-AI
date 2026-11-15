@@ -1,0 +1,43 @@
+{
+  "verification": "Streamlit AppTest, no visual browser verification",
+  "input_status": "Manual software-validation declarations; not a real farmer profile or crop calendar; no Kc",
+  "coordinates": {
+    "latitude": 32.34,
+    "longitude": -6.36
+  },
+  "climate_period": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "climate_valid_days": {
+    "T2M": 365,
+    "T2M_MIN": 365,
+    "T2M_MAX": 365,
+    "PRECTOTCORR": 365,
+    "RH2M": 365,
+    "WS2M": 365,
+    "ALLSKY_SFC_SW_DWN": 365,
+    "PS": 365
+  },
+  "eto_available_days": 364,
+  "eto_expected_days": 365,
+  "eto_unavailable_dates": [
+    "2025-12-10"
+  ],
+  "eto_unavailability_reasons": {
+    "2025-12-10": "Facteur radiatif FAO-56 négatif (nébulosité eq.39) : Rs/Rso=0.222884, facteur=-0.049106. Aucun remplacement arbitraire."
+  },
+  "etc": "Unavailable as expected: no documented Kc or applicability provided",
+  "quantitative_comparison_allowed": false,
+  "exports_verified": [
+    "agrinova_comparison.json",
+    "agrinova_eto_fao56_daily.csv",
+    "agrinova_eto_fao56_provenance.json",
+    "eto_template.csv",
+    "nasa_power_daily.csv",
+    "nasa_power_provenance.json",
+    "nasa_power_raw.json"
+  ],
+  "manual_workflow": "passed",
+  "error_discovered_and_fixed": "Comparison JSON eto_source was empty for computed NASA ET0; now read from validated metadata. No formula changes."
+}

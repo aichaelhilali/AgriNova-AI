@@ -1,0 +1,33 @@
+{
+    "reference":  "https://dribbble.com/shots/27400344-Agritech-Analytics-Monitoring-Dashboard",
+    "reference_author":  "Fahema Yesmin",
+    "reference_screens_examined":  10,
+    "reference_assets_used_in_application":  false,
+    "implementation":  "Original Streamlit dashboard, icon sidebar, neutral canvas, main visual card, right evidence column, responsive scenario and comparison cards",
+    "scientific_services_modified":  false,
+    "current_service_sha256":  {
+                                   "src/agrinova/rotation/compare.py":  "4EA11C5A8B5E73098D921AC88F1BBDD1AE0BF0708AB363706F1A05D0C1830FD6",
+                                   "src/agrinova/data/power.py":  "7BC4B9EE35519D7FB1E30F548817FD058E9DA4CD6457B53E6DAA76CC97523FAA",
+                                   "src/agrinova/analysis/crop_water.py":  "46EF47C158C471B00A47EB73100D0295DA54946CFF0712ED5EBF22EAD79AAA8D",
+                                   "src/agrinova/analysis/water.py":  "C0EA595AB125D4E4943ABA659153FAC972DB5E7A2E45EA6488A48E4E37A446C8",
+                                   "src/agrinova/rotation/demo.py":  "E84B6A46784AB5458BD17610D6B6D33FB5D3203ACF4AFBEF4BE72D3C8482F285",
+                                   "src/agrinova/analysis/eto.py":  "47AA2CFE445E4FB1BA6BEA1E5CCA55B92713AD7BAF136C3D60E735928BD414D7",
+                                   "src/agrinova/rotation/agronomy.py":  "492C88515629754ED51D3580AD98B482A01CACBC576D1EE55A55ACEBD1D5D20C"
+                               },
+    "verification_method":  "Streamlit AppTest, complete pytest suite, two real NASA POWER integration workflows and parsed actual download payloads",
+    "tests":  {
+                  "duration_seconds":  40.81,
+                  "skipped":  0,
+                  "failed":  0,
+                  "passed":  226
+              },
+    "python_compilation":  "passed",
+    "visual_browser_verification":  false,
+    "browser_blocker":  "Integrated browser bootstrap failed: codex/sandbox-state-meta: missing field sandboxPolicy",
+    "limitations":  [
+                        "No visual screenshots or pixel-level browser validation were performed.",
+                        "Native Streamlit editable grids remain; custom CSS depends on the installed Streamlit DOM.",
+                        "Submit the farmer form before changing sections; client-side unsent drafts are not claimed to be verified.",
+                        "Streamlit 1.65 or newer is required for the stateful tab navigation."
+                    ]
+}

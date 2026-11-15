@@ -1,0 +1,11 @@
+[theme]
+base = "light"
+primaryColor = "#186105"
+backgroundColor = "#E8E8E8"
+secondaryBackgroundColor = "#E8E8E8"
+textColor = "#11190F"
+font = "sans serif"
+yellowBackgroundColor = "#E8E8E8"
+yellowTextColor = "#545D49"
+redBackgroundColor = "#E8E8E8"
+redTextColor = "#11190F"

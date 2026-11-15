@@ -1,0 +1,29 @@
+# Python et environnements locaux
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Données locales : conserver uniquement les marqueurs de dossiers
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Éditeurs et système
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

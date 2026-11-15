@@ -1,0 +1,19 @@
+{
+  "verification_method": "Streamlit AppTest; not a visual browser review",
+  "destinations_passed": [
+    "Vue d’ensemble",
+    "Climat",
+    "Exploitation",
+    "Rotations",
+    "Comparaison",
+    "Données et sources",
+    "Paramètres",
+    "Export"
+  ],
+  "original_three_tabs_preserved": true,
+  "submitted_manual_inputs_preserved": true,
+  "saved_comparison_preserved": true,
+  "demo_loading_and_restoration_passed": true,
+  "export_navigation_passed": true,
+  "no_fabricated_climate_or_kc": true
+}

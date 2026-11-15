@@ -1,0 +1,50 @@
+{
+  "source": "NASA POWER daily AG UTC",
+  "source_payload_sha256": "863b020d35a04b1b86c901ce252d54a5b2d418d8d5237d79d4db04c67c05cfce",
+  "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MIN%2CT2M_MAX%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CPS&community=AG&latitude=32.34&longitude=-6.36&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+  "method": "FAO-56 Penman-Monteith daily eq.6",
+  "method_version": "agrinova_fao56_daily_v1",
+  "references": [
+    "https://www.fao.org/4/X0490E/x0490e07.htm",
+    "https://www.fao.org/4/X0490E/x0490e08.htm"
+  ],
+  "reference_case": "FAO-56 chapter 4 example 18, Uccle 6 July: approximately 3.9 mm/day",
+  "units": "mm/day",
+  "reference_surface": "short_grass",
+  "time_standard": "UTC",
+  "location": {
+    "latitude": 32.34,
+    "longitude": -6.36
+  },
+  "period": {
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  },
+  "input_units": {
+    "T2M": "C",
+    "T2M_MIN": "C",
+    "T2M_MAX": "C",
+    "RH2M": "%",
+    "WS2M": "m/s",
+    "ALLSKY_SFC_SW_DWN": "MJ/m^2/day",
+    "PS": "kPa"
+  },
+  "elevation_m": 994.64,
+  "elevation_source": "NASA POWER response geometry: MERRA-2 average for 0.5 x 0.625 degree grid (metres)",
+  "expected_days": 365,
+  "available_days": 364,
+  "missing_days": 1,
+  "unavailable_dates": [
+    "2025-12-10"
+  ],
+  "assumptions": [
+    "Tmean FAO = (Tmax+Tmin)/2 ; T2M NASA conservée pour le climat et le contrôle qualité",
+    "ea via RH2M moyenne et équation 19 : approximation documentée, moins souhaitable que RHmin/RHmax",
+    "Albédo 0,23 et G journalier nul pour l’herbe de référence (FAO-56)",
+    "Altitude moyenne de maille MERRA-2, pas une altitude de parcelle mesurée",
+    "Rso FAO eq.37 ; Rs/Rso limité à 1 selon eq.39, sans borne inférieure inventée",
+    "WS2M déjà à 2 m ; minimum de calcul 0,5 m/s recommandé par FAO-56 pour la convection en air calme, avec vent source conservé",
+    "Aucune interpolation ni estimation d’une variable météo manquante"
+  ],
+  "validation": "Équations et cas de référence vérifiables ; aucune validation agronomique locale indépendante"
+}
